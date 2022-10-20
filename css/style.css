@@ -1,0 +1,184 @@
+/** @format */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.main {
+  background-color: rgba(128, 128, 128, 0.871);
+  padding: 40px;
+  opacity: 0.7;
+}
+.main__container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.main__title {
+  font-size: 55px;
+  font-weight: 700;
+  padding: 20px;
+  color: rgb(216, 221, 151);
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 15px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 15px rgb(31, 44, 44);
+}
+h3 {
+  font-size: 35px;
+  color: rgb(31, 44, 44);
+  text-align: center;
+  padding: 20px;
+}
+.subtitle {
+  color: rgb(31, 44, 44);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.content-main__transform2d {
+  padding: 100px;
+}
+.transform2d {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: space-between;
+}
+.item {
+  color: rgb(31, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 5px rgba(31, 44, 44, 0.7);
+  transition: all 0.8s ease 0s;
+}
+.transform2d__item1 {
+  background-color: darkorchid;
+}
+.transform2d__item1:hover {
+  transform: translate(50px, 50px);
+}
+.transform2d__item2 {
+  transform: rotate(0deg);
+  background-color: chartreuse;
+}
+.transform2d__item2:hover {
+  transform: rotate(360deg);
+}
+.transform2d__item3 {
+  transform: scale(1, 1);
+  background-color: coral;
+}
+.transform2d__item3:hover {
+  transform: scale(1.5, 0.8);
+}
+.transform2d__item4 {
+  transform: skew(0deg, 0deg);
+  background-color: rgb(77, 77, 168);
+}
+.transform2d__item4:hover {
+  transform: skew(-25deg, -25deg);
+}
+.transform2d__item5 {
+  background-color: aqua;
+}
+.transform2d__item5:hover {
+  transform: translate(50px, 50px) rotateY(360deg) scale(1.5) skew(-10deg);
+}
+.transform2d__item6 {
+  background-color: cadetblue;
+}
+.transform2d__item6:hover {
+  transform-origin: top right;
+  transform: rotate(-25deg);
+}
+.content-main__transform3d {
+  padding: 100px;
+}
+.transform3d {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: space-between;
+  perspective: 150px;
+  perspective-origin: top;
+}
+.transform3d__style {
+  perspective: 400px;
+  transform-style: preserve-3d;
+}
+.transform3d__backface {
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+.transform3d__item1 {
+  background-color: crimson;
+}
+.transform3d__item1:hover {
+  transform: translate3d(50px, 50px, 10px);
+}
+.transform3d__item2 {
+  background-color: darkgreen;
+}
+.transform3d__item2:hover {
+  transform: translate3d(50px, 50px, 30px) scale3d(1.5, 1.5, 2)
+    rotate3d(2, 1, 1, 3deg);
+}
+.transform3d__item3 {
+  background-color: darkgoldenrod;
+}
+.transform3d__item3:hover {
+  transform: scale3d(1.5, 1.5, 2);
+}
+.transform3d__item4 {
+  background-color: darkcyan;
+  transform: rotateX(0deg);
+  transition: all 0.6s ease 0s;
+}
+.transform3d__style:hover .transform3d__item4 {
+  transform: rotateX(180deg);
+}
+.transform3d__item5 {
+  transform: rotateY(0deg);
+  transition: all 0.9s ease 0s;
+  background-color: rgb(149, 53, 53);
+  backface-visibility: hidden;
+}
+.transform3d__backface:hover .transform3d__item5 {
+  transform: rotateY(180deg);
+}
+.transform3d__item6 {
+  background-color: deeppink;
+}
+.transform3d__item6:hover {
+  transform: rotateX(20deg);
+}
+.main__exersize {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.exersize__block {
+  overflow: hidden;
+  transition: all 0.8s ease 0s;
+}
+.exersize__block:hover .exersize__item {
+  transform: translate(0, 0);
+}
+.exersize__item {
+  background-color: gold;
+  transform: translate(100%, 0);
+  box-shadow: none;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
